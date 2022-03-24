@@ -1,0 +1,14 @@
+{
+  "name": "INTERIOR",
+  "version": "1.0.0",
+  "description": "Bring your dream home to life",
+  "main": "index.html",
+  "scripts": {
+    "watch:css": "sass --watch sass/main.scss css/style.css"
+  },
+  "author": "Manoranjan",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
