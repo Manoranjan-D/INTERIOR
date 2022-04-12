@@ -1,0 +1,18 @@
+.contact {
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__form {
+
+    &__label{}
+
+    &__input{}
+  }
+}

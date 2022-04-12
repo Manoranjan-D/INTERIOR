@@ -1,0 +1,52 @@
+.header {
+  // top
+  &__content {
+  }
+
+  &__logo {
+  }
+
+  &__nav {
+  }
+
+  &__contact {
+  }
+
+  // bottom
+  &__bg-img {
+    background-image: url('../assests/header.jpg');
+    height: 85vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__hero {
+  }
+
+  &__title {
+    max-width: 18ch;
+  }
+
+  &__description {
+    max-width: 50ch;
+  }
+
+  &__details {
+  }
+
+  .about {
+    &__number {
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+
+    &__text {
+      text-align: start;
+      text-transform: capitalize;
+      max-width: 10ch;
+      word-break: break-word;
+    }
+  }
+}

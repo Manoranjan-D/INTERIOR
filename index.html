@@ -15,9 +15,357 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>INTERIOR | Bring your dream home to life</title>
   </head>
+
   <body>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda id
-    soluta vero at culpa, enim nam vitae ea ipsam doloribus ratione est
-    provident ex asperiores error porro repudiandae eos rem.
+    <!-- HEADER -->
+    <header class="header bg-clr-black mbr-4">
+      <div
+        class="container header__content flex align-items-center justify-content-between gap-1"
+      >
+        <h1 class="header__logo heading-1 text-clr-white">INTERIOR</h1>
+
+        <nav class="nav align-self-stretch">
+          <ul
+            class="nav__list flex justify-content-center align-items-center height-100"
+            role="list"
+          >
+            <li
+              class="nav__item flex justify-content-center align-items-center height-100 pxr-3"
+            >
+              <a href="#" class="nav__link text-clr-white">Main</a>
+            </li>
+            <li
+              class="nav__item flex justify-content-center align-items-center height-100 pxr-3"
+            >
+              <a href="#" class="nav__link text-clr-white">About</a>
+            </li>
+            <li
+              class="nav__item flex justify-content-center align-items-center height-100 pxr-3"
+            >
+              <a href="#" class="nav__link text-clr-white">Services</a>
+            </li>
+            <li
+              class="nav__item flex justify-content-center align-items-center height-100 pxr-3"
+            >
+              <a href="#" class="nav__link text-clr-white">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="header__contact text-clr-white fw-700">+00 890-000-10</p>
+      </div>
+
+      <div class="header__bg-img">
+        <div
+          class="container flex flex-direction-column justify-content-around align-items-start"
+        >
+          <div
+            class="header__hero flex flex-direction-column align-items-start justify-content-center gap-1"
+          >
+            <h1 class="header__title heading-1 heading-1-circle">
+              Best Interior Desing For Your Home
+            </h1>
+            <p class="header__description">
+              interior design is the art and science of enhancing the interior
+              of a building to achieve a healthier and more aesthetically.
+            </p>
+            <button class="btn btn-primary">Lets talk</button>
+          </div>
+
+          <div class="header__details flex gap-2">
+            <div
+              class="about flex flex-direction-column align-items-start gap-2"
+            >
+              <h2 class="about__number heading-2">10</h2>
+              <p class="about__text">years experience</p>
+            </div>
+
+            <div
+              class="about flex flex-direction-column align-items-start gap-2"
+            >
+              <h2 class="about__number heading-2">25</h2>
+              <p class="about__text">awards gained</p>
+            </div>
+
+            <div
+              class="about flex flex-direction-column align-items-start gap-2"
+            >
+              <h2 class="about__number heading-2">125</h2>
+              <p class="about__text">Furniture sold</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section class="about mbr-4">
+        <div class="container">
+          <div class="about__content pyr-4 gap-r-4">
+            <div
+              class="about__video flex justify-content-center align-items-center"
+            >
+              <video controls preload="auto" muted>
+                <source src="./assests/about-video.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+
+            <div
+              class="about__details flex flex-direction-column align-items-start justify-content-center gap-1"
+            >
+              <p class="about__title fw-700">About</p>
+              <h2 class="about__heading heading-2">Dream.Create.Live</h2>
+              <p class="about__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                amet dicta libero consequatur tempore repudiandae rem cum unde
+                culpa ex provident repellat consequuntur fugiat
+              </p>
+              <button class="btn btn-secondary">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services mbr-4">
+        <div class="container">
+          <div class="services__content flex flex-direction-column gap-3 pyr-4">
+            <div class="services__about text-center">
+              <p class="fw-700">Our Services</p>
+              <h2 class="heading-2">How Do We Provide Our Services</h2>
+            </div>
+
+            <div class="services__description gap-3">
+              <figure class="service box-shadow-1">
+                <img
+                  src="./assests/gallery-1.jpg"
+                  alt="service one"
+                  class="service__photo"
+                />
+                <figcaption class="service__caption fw-700">
+                  Awesome Design
+                </figcaption>
+              </figure>
+
+              <figure class="service box-shadow-1">
+                <img
+                  src="./assests/gallery-1.jpg"
+                  alt="service one"
+                  class="service__photo"
+                />
+                <figcaption class="service__caption fw-700">
+                  Best Facilities
+                </figcaption>
+              </figure>
+
+              <figure class="service box-shadow-1">
+                <img
+                  src="./assests/gallery-1.jpg"
+                  alt="service one"
+                  class="service__photo"
+                />
+                <figcaption class="service__caption fw-700">
+                  Fast Shipping
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blogs pyr-4 mbr-4">
+        <div class="container grid gap-4">
+          <h2 class="blogs__heading heading-2 text-center">
+            Our Populor Blogs
+          </h2>
+
+          <div class="blogs__content">
+            <figure
+              class="blog flex flex-direction-column justify-content-center align-items-start gap-1"
+            >
+              <img src="./assests/gallery-2.jpg" alt="" class="blog__photo" />
+              <p class="blog__date">10 August 2022</p>
+              <figcaption class="blog__caption">
+                <h3 class="heading-3">Plaining to performence</h3>
+              </figcaption>
+              <p class="blog__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+                qui libero optio cumque tempora dolorum? Veritatis amet
+                voluptates optio incidunt.
+              </p>
+              <button class="btn btn-secondary">Read More</button>
+            </figure>
+
+            <figure
+              class="blog flex flex-direction-column justify-content-center align-items-start gap-1"
+            >
+              <img src="./assests/gallery-2.jpg" alt="" class="blog__photo" />
+              <p class="blog__date">10 August 2022</p>
+              <figcaption class="blog__caption">
+                <h3 class="heading-3">Inovative solutions</h3>
+              </figcaption>
+              <p class="blog__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+                qui libero optio cumque tempora dolorum? Veritatis amet
+                voluptates optio incidunt.
+              </p>
+              <button class="btn btn-secondary">Read More</button>
+            </figure>
+
+            <figure
+              class="blog flex flex-direction-column justify-content-center align-items-start gap-1"
+            >
+              <img src="./assests/gallery-2.jpg" alt="" class="blog__photo" />
+              <p class="blog__date">10 August 2022</p>
+              <figcaption class="blog__caption">
+                <h3 class="heading-3">Plaining to performence</h3>
+              </figcaption>
+              <p class="blog__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+                qui libero optio cumque tempora dolorum? Veritatis amet
+                voluptates optio incidunt.
+              </p>
+              <button class="btn btn-secondary">Read More</button>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial pyr-4 mbr-4 bg-clr-grey">
+        <div class="container grid gap-4">
+          <h2 class="heading-2 text-center">What Our Client Say</h2>
+
+          <div class="client-card">
+            <div class="card box-shadow-2 bg-clr-white">
+              <img
+                src="./assests/user-1.jpg"
+                alt="user one"
+                class="card__photo"
+              />
+
+              <div class="card__content p-2 flex flex-direction-column gap-2">
+                <p class="card__discription">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda iusto vitae, laboriosam ipsam in possimus vel natus
+                  enim.
+                </p>
+                <div class="card__name">
+                  <p class="fw-700">Manu</p>
+                  <i class="text-clr-grey-dark">MDS Manufacturing</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card box-shadow-2 bg-clr-white">
+              <img
+                src="./assests/user-1.jpg"
+                alt="user one"
+                class="card__photo"
+              />
+
+              <div class="card__content p-2 flex flex-direction-column gap-2">
+                <p class="card__discription">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda iusto vitae, laboriosam ipsam in possimus vel natus
+                  enim.
+                </p>
+                <div class="card__name">
+                  <p class="fw-700">Manu</p>
+                  <i class="text-clr-grey-dark">MDS Manufacturing</i>
+                </div>
+              </div>
+            </div>
+
+            <div class="card box-shadow-2 bg-clr-white">
+              <img
+                src="./assests/user-1.jpg"
+                alt="user one"
+                class="card__photo"
+              />
+
+              <div class="card__content p-2 flex flex-direction-column gap-2">
+                <p class="card__discription">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda iusto vitae, laboriosam ipsam in possimus vel natus
+                  enim.
+                </p>
+                <div class="card__name">
+                  <p class="fw-700">Manu</p>
+                  <i class="text-clr-grey-dark">MDS Manufacturing</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">gallery</section>
+
+      <section class="contact">
+        <div class="container contact__body">
+          <div class="contact photo">
+            <img src="./assests/blog-1.jpg" alt="contact us photo" />
+          </div>
+
+          <div class="contact__form">
+            <h2 class="heading-2">Contact Us</h2>
+
+            <form action="#" class="form">
+              <label for="name" class="form__label">Name</label>
+              <input type="text" class="form__input" id="name" />
+
+              <label for="email" class="form__label">Email</label>
+              <input type="email" class="form__input" id="email" />
+
+              <label for="text" class="form__label">What you wanna say?</label>
+              <textarea class="form__input" id="text" rows="5"></textarea>
+
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <div class="company">
+          <h1 class="heading-1 company__name">INTERIOR</h1>
+          <p class="company__address">100 Nallin Street, New Youk</p>
+          <p class="company__phone">+00 890-000-10</p>
+          <p class="company__email">interior@design.com</p>
+        </div>
+
+        <div class="nav">
+          <h2 class="heading-2">Quick Links</h2>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Main</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Gallery</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="newsletter">
+          <h3 class="heading-2">Newsletter</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi hic ut
+            veniam fugiat quo, inventore omnis, asperiores.
+          </p>
+
+          <input type="text" placeholder="example@domine.com" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

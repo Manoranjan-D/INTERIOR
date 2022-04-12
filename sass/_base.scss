@@ -1,16 +1,33 @@
 :root {
   /* colors */
   --clr-grey: 0, 0%, 93%;
+  --clr-grey-light: 0, 0%, 99%;
+  --clr-grey-dark: 0, 1%, 64%;
   --clr-yellow: 38, 91%, 66%;
+  --clr-yellow-dark: 38, 91%, 60%;
 
   /* spacing */
+  --x-small: 1rem;
   --small: 2rem;
   --medium: 4rem;
+  --medium-res: clamp(2rem, 3.4vw, 4rem);
   --large: 8rem;
+  --large-res: clamp(4rem, 8vw, 8rem);
   --default: 1.6rem;
+  --max-width: 120rem;
 
   /* font */
   --ff-nunito: 'Nunito', sans-serif;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  /*border*/
+  --border-bottom: 1.5px solid hsl(var(--clr-grey));
+
+  /* box-shadow*/
+  --box-shadow-1: 0 0.5rem 0.9rem rgba(0, 0, 0, 0.2);
+  --box-shadow-2: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 /*---------------*/
@@ -31,8 +48,8 @@ html {
 /* Set core body defaults */
 body {
   font-family: var(--ff-nunito);
-  font-size: 1.6rem;
-  min-height: 100vh;
+  font-size: var(--default);
+  // min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.6;
 }
@@ -53,6 +70,14 @@ blockquote {
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default style for links*/
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Set core root defaults */
@@ -63,7 +88,8 @@ html:focus-within {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -89,4 +115,12 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* container */
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--default);
+  height: 100%;
 }

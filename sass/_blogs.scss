@@ -1,0 +1,29 @@
+.blogs {
+  &__heading {
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .blog {
+    &__photo {
+      width: 85%;
+      height: 85%;
+      border-radius: 20px;
+    }
+
+    &__date {
+      color: rgb(163, 162, 162);
+    }
+
+    &__caption {
+    }
+
+    &__content {
+      max-width: 45ch;
+    }
+  }
+}
